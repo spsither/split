@@ -3,7 +3,7 @@ import shutil
 
 # List of source directories
 
-group = "gb"
+group = "ge"
 
 source_directories = [dir_name for dir_name in os.listdir("after_split") if dir_name.startswith("STT_CS") and os.path.isdir(os.path.join("after_split", dir_name))]
 
