@@ -31,6 +31,6 @@ if __name__ == "__main__":
             break
         id = row['STT_0000']
         gd_url = row['Audio']
-        sr_no = row['Sr.no']
-        if sr_no >= 1 and sr_no <= 206:
+        sr_no = row.iloc[0]
+        if sr_no >= 57 and sr_no <= 60:
             download_audio(id, gd_url)

@@ -3,10 +3,10 @@ import shutil
 
 # List of source directories
 
-from_id = 190
-to_id = 199
+from_id = 57
+to_id = 60
 
-group = "gb"
+group = "gh"
 
 source_directories = [f"STT_NS{i:04}" for i in range(from_id, to_id + 1)]
 
