@@ -84,7 +84,7 @@ def split_audio(audio_file, output_folder):
 
 if __name__ == "__main__":
     stt_files = [filename for filename in os.listdir("full_audio") if filename.startswith("STT_NS") and os.path.isfile(os.path.join("full_audio", filename))]
-    # stt_files = ['STT_NS0001.wav', 'STT_NS0002.wav']
+    # stt_files = ['STT_NS0081.wav']
     print(stt_files)
     for stt_file in stt_files:
         print(stt_file)
