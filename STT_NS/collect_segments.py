@@ -3,12 +3,16 @@ import shutil
 
 # List of source directories
 
-from_id = 181
-to_id =   189
+from_id = 225
+to_id   = 244
 
-group = "gh"
+group = "ga"
 
-source_directories = [f"STT_NS{i:04}" for i in range(from_id, to_id + 1)]
+# source_directories = [f"STT_NS{i:04}" for i in range(from_id, to_id + 1)]
+
+source_directories = [dir_name for dir_name in os.listdir("after_split") if dir_name.startswith("STT_NS") and os.path.isdir(os.path.join("after_split", dir_name))]
+
+print(f"Source directories: {source_directories}")
 
 # Target directory
 target_directory = f"segments_ns_{group}_{from_id}_{to_id}"

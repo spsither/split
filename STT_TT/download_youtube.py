@@ -2,8 +2,8 @@ import pandas as pd
 from pathlib import Path
 import os
 
-from_id = 506
-to_id = 620
+from_id = 621
+to_id = 643
 
 def read_spreadsheet():
     SHEET_ID = "1zX1JEUigHX5gSwfJKqeerhs_5Xxkq8wFbpVUBjrKEnc"

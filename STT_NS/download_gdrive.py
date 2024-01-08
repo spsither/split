@@ -32,5 +32,5 @@ if __name__ == "__main__":
         id = row['STT_0000']
         gd_url = row['Audio']
         sr_no = row.iloc[0]
-        if sr_no >= 181 and sr_no <= 189:
+        if sr_no >= 225 and sr_no <= 244:
             download_audio(id, gd_url)
